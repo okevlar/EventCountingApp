@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+    <RelativeLayout
+        android:id="@+id/settingsRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/settings_toolbar"
+            android:id="@+id/settings_toolbar"/>
+
+        <TextView
+            android:id="@+id/counter1name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/settings_toolbar"
+            android:layout_alignLeft="@id/settings_toolbar"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:text="Counter 1 Name"
+            android:textSize="24dp" />
+        <EditText
+            android:id="@+id/editCounter1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/counter1name"
+            android:layout_alignLeft="@id/settings_toolbar"
+            android:layout_marginHorizontal="24dp"
+            android:hint="Name goes here"
+            android:textColor="@android:color/system_neutral1_600"
+            android:inputType="text"
+            android:maxLength="20"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+            tools:targetApi="s" />
+        <TextView
+            android:id="@+id/counter2name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editCounter1"
+            android:layout_alignLeft="@id/settings_toolbar"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:text="Counter 2 Name"
+            android:textSize="24dp" />
+        <EditText
+            android:id="@+id/editCounter2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/counter2name"
+            android:layout_alignLeft="@id/settings_toolbar"
+            android:layout_marginHorizontal="24dp"
+            android:hint="Name goes here"
+            android:textColor="@android:color/system_neutral1_600"
+            android:inputType="text"
+            android:maxLength="20"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+            tools:targetApi="s" />
+        <TextView
+            android:id="@+id/counter3name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editCounter2"
+            android:layout_alignLeft="@id/settings_toolbar"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:text="Counter 3 Name"
+            android:textSize="24dp" />
+        <EditText
+            android:id="@+id/editCounter3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/counter3name"
+            android:layout_alignLeft="@id/settings_toolbar"
+            android:layout_marginHorizontal="24dp"
+            android:hint="Name goes here"
+            android:textColor="@android:color/system_neutral1_600"
+            android:inputType="text"
+            android:maxLength="20"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+            tools:targetApi="s" />
+        <TextView
+            android:id="@+id/maxCountsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editCounter3"
+            android:layout_alignLeft="@id/settings_toolbar"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:text="Maximum Counts"
+            android:textSize="24dp" />
+        <EditText
+            android:id="@+id/maxCountsEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/maxCountsTextView"
+            android:layout_alignLeft="@id/settings_toolbar"
+            android:layout_marginHorizontal="24dp"
+            android:hint="Max count goes here"
+            android:maxLength="3"
+            android:textColor="@android:color/system_neutral1_600"
+            android:inputType="number"
+            tools:targetApi="s" />
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="144dp"
+            android:layout_height="48dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/maxCountsEditText"
+            android:layout_marginVertical="48dp"
+            android:background="@color/purple_700"
+            android:inputType="text"
+            android:text="SAVE"/>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

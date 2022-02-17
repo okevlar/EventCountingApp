@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/settings_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:text="SETTINGS"/>
+    <Button
+        android:id="@+id/eventA_button"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="192dp"
+        android:text="@string/event1Name"/>
+    <Button
+        android:id="@+id/eventB_button"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/eventA_button"
+        android:text="@string/event2Name"/>
+    <Button
+        android:id="@+id/eventC_button"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/eventB_button"
+        android:text="@string/event3Name"/>
+    <TextView
+        android:id="@+id/totalCount_changing_textView"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/eventC_button"
+        android:layout_marginTop="48dp"
+        android:text="@string/totalCount_changing_textView"
+        android:textSize="24dp"/>
+    <Button
+        android:id="@+id/showCounts_button"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/totalCount_changing_textView"
+        android:layout_marginTop="48dp"
+        android:text="SHOW MY COUNTS"/>
+
+</RelativeLayout>
